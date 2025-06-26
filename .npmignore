@@ -1,0 +1,18 @@
+# Dependency files
+pnpm-lock.yaml
+
+# Source files (already compiled)
+bin/*.ts
+
+# IDE and editor files
+.vscode/
+.idea/
+
+# Logs and temporary files
+logs/
+*.log
+npm-debug.log*
+
+# Test files
+__tests__/
+*.test.js
