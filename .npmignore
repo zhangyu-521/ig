@@ -1,18 +1,5 @@
-# Dependency files
-pnpm-lock.yaml
-
-# Source files (already compiled)
+# Only include bin/*.js files
+*
+!bin/
 bin/*.ts
-
-# IDE and editor files
-.vscode/
-.idea/
-
-# Logs and temporary files
-logs/
-*.log
-npm-debug.log*
-
-# Test files
-__tests__/
-*.test.js
+!bin/*.js
