@@ -1,17 +1,15 @@
 {
   "name": "anyig",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "1.1.1",
+  "description": "A package that generates any ignored files",
   "bin": "./bin/bin.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tsc",
     "prepublish": "npx tsc",
     "dev": "nodemon -w ./bin/*.ts --ext ts --exec npx tsc"
   },
   "keywords": ["ig"],
-  "author": "",
+  "author": "zhangyu620",
   "license": "ISC",
   "dependencies": {
     "inquirer": "^12.6.3",
