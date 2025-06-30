@@ -1,0 +1,18 @@
+{
+  "defaultTemplates": [
+    "gitignore",
+    "npmignore"
+  ],
+  "outputDir": "./generated",
+  "autoBackup": true,
+  "confirmOverwrite": false,
+  "customTemplates": [
+    {
+      "name": "custom-ignore",
+      "filename": ".customignore",
+      "description": "Custom ignore file template",
+      "category": "custom",
+      "content": "# Add your custom ignore patterns here\n*.tmp\n*.cache\n"
+    }
+  ]
+}
