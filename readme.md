@@ -268,8 +268,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 - 🐛 [Report Issues](https://github.com/zhangyu-521/ig/issues)
-- 💬 [Discussions](https://github.com/zhangyu-521/ig/discussions)
-- 📧 Email: zhangyu620@example.com
 
 ---
 
