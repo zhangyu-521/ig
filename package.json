@@ -1,7 +1,18 @@
 {
   "name": "anyig",
-  "version": "1.1.1",
+  "version": "1.1.3",
   "description": "A package that generates any ignored files",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhangyu-521/ig"
+  },
+  "bugs": {
+    "url": "https://github.com/zhangyu-521/ig/issues"
+  },
+  "homepage": "https://github.com/zhangyu-521/ig#readme",
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "bin": "./bin/bin.js",
   "scripts": {
     "build": "npx tsc",
