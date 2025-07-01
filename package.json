@@ -34,7 +34,11 @@
     "lint:fix": "eslint src/**/*.ts bin/**/*.ts --fix",
     "format": "prettier --write \"src/**/*.ts\" \"bin/**/*.ts\"",
     "format:check": "prettier --check \"src/**/*.ts\" \"bin/**/*.ts\"",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "docs": "node scripts/docs-switch.js",
+    "docs:en": "node scripts/docs-switch.js en",
+    "docs:zh": "node scripts/docs-switch.js zh-CN",
+    "docs:serve": "npx http-server docs -p 8080 -o"
   },
   "keywords": [
     "ignore",

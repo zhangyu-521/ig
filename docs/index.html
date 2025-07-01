@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnyIG Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .language-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .language-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .language-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .language-card .flag {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .language-card h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        
+        .language-card p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+        
+        .language-card .features {
+            list-style: none;
+        }
+        
+        .language-card .features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .language-card .features li:last-child {
+            border-bottom: none;
+        }
+        
+        .language-card .features li::before {
+            content: "✓";
+            color: #4CAF50;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        
+        .quick-links {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .quick-links h3 {
+            color: white;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .quick-link {
+            background: rgba(255,255,255,0.2);
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            transition: background 0.3s ease;
+        }
+        
+        .quick-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .footer {
+            text-align: center;
+            color: rgba(255,255,255,0.8);
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .language-cards {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🚀 AnyIG Documentation</h1>
+            <p>Choose your preferred language to get started</p>
+        </header>
+        
+        <div class="language-cards">
+            <a href="../README.md" class="language-card">
+                <div class="flag">🇺🇸</div>
+                <h2>English Documentation</h2>
+                <p>Complete documentation in English with all features, installation guides, and examples.</p>
+                <ul class="features">
+                    <li>Installation & Quick Start</li>
+                    <li>13+ Template Categories</li>
+                    <li>Configuration Guide</li>
+                    <li>CLI Reference</li>
+                    <li>Development Guide</li>
+                </ul>
+            </a>
+            
+            <a href="../README.zh-CN.md" class="language-card">
+                <div class="flag">🇨🇳</div>
+                <h2>中文文档</h2>
+                <p>完整的中文文档，包含所有功能、安装指南和示例。</p>
+                <ul class="features">
+                    <li>安装与快速开始</li>
+                    <li>13+ 模板分类</li>
+                    <li>配置指南</li>
+                    <li>命令行参考</li>
+                    <li>开发指南</li>
+                </ul>
+            </a>
+        </div>
+        
+        <div class="quick-links">
+            <h3>🔗 Quick Links</h3>
+            <div class="links-grid">
+                <a href="https://www.npmjs.com/package/anyig" class="quick-link">
+                    📦 NPM Package
+                </a>
+                <a href="https://github.com/zhangyu-521/ig" class="quick-link">
+                    🐙 GitHub Repository
+                </a>
+                <a href="https://github.com/zhangyu-521/ig/issues" class="quick-link">
+                    🐛 Report Issues
+                </a>
+                <a href="https://github.com/zhangyu-521/ig/discussions" class="quick-link">
+                    💬 Discussions
+                </a>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p>Made with ❤️ by <a href="https://github.com/zhangyu-521" style="color: white;">zhangyu620</a></p>
+        </footer>
+    </div>
+    
+    <script>
+        // Add some interactive effects
+        document.querySelectorAll('.language-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-5px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+        
+        // Language detection and redirect
+        const userLang = navigator.language || navigator.userLanguage;
+        if (userLang.startsWith('zh') && !localStorage.getItem('language-selected')) {
+            const banner = document.createElement('div');
+            banner.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                background: #4CAF50;
+                color: white;
+                padding: 1rem;
+                text-align: center;
+                z-index: 1000;
+                transform: translateY(-100%);
+                transition: transform 0.3s ease;
+            `;
+            banner.innerHTML = `
+                检测到您使用中文，是否查看中文文档？
+                <button onclick="window.location.href='../README.zh-CN.md'; localStorage.setItem('language-selected', 'zh')" 
+                        style="margin-left: 1rem; padding: 0.5rem 1rem; background: white; color: #4CAF50; border: none; border-radius: 5px; cursor: pointer;">
+                    查看中文文档
+                </button>
+                <button onclick="this.parentElement.remove(); localStorage.setItem('language-selected', 'en')" 
+                        style="margin-left: 0.5rem; padding: 0.5rem 1rem; background: transparent; color: white; border: 1px solid white; border-radius: 5px; cursor: pointer;">
+                    Continue in English
+                </button>
+            `;
+            document.body.appendChild(banner);
+            setTimeout(() => banner.style.transform = 'translateY(0)', 100);
+        }
+    </script>
+</body>
+</html>

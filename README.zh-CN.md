@@ -1,55 +1,55 @@
-# AnyIG
+# AnyIG - 忽略文件生成器
 
 [![npm version](https://badge.fury.io/js/anyig.svg)](https://badge.fury.io/js/anyig)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg)](http://www.typescriptlang.org/)
 [![CI](https://github.com/zhangyu-521/ig/workflows/CI/badge.svg)](https://github.com/zhangyu-521/ig/actions)
 
-🚀 A powerful and extensible CLI tool for generating ignore files for various development tools and environments.
+🚀 一个功能强大且可扩展的CLI工具，用于为各种开发工具和环境生成忽略文件。
 
-**English** | [简体中文](README.zh-CN.md)
+[English](README.md) | **简体中文**
 
-## ✨ Features
+## ✨ 功能特性
 
-- 🎯 **Multiple Templates**: Support for Git, NPM, ESLint, Prettier, Docker, and more
-- 🔧 **Framework Support**: Specialized templates for React, Vue, Next.js, Python, Java
-- 📝 **Custom Templates**: Define your own ignore file templates
-- ⚙️ **Configuration**: Flexible configuration with `.anyigrc.json`
-- 🔄 **Backup**: Automatic backup of existing files
-- 📦 **Batch Generation**: Generate multiple ignore files at once
-- 🎨 **Interactive CLI**: Beautiful and intuitive command-line interface
-- 🧪 **Well Tested**: Comprehensive test coverage
+- 🎯 **多种模板**: 支持 Git、NPM、ESLint、Prettier、Docker 等多种忽略文件
+- 🔧 **框架支持**: 为 React、Vue、Next.js、Python、Java 等提供专门的模板
+- 📝 **自定义模板**: 支持定义你自己的忽略文件模板
+- ⚙️ **配置文件**: 通过 `.anyigrc.json` 进行灵活配置
+- 🔄 **自动备份**: 自动备份现有文件，防止意外覆盖
+- 📦 **批量生成**: 一次生成多个忽略文件
+- 🎨 **交互式界面**: 美观直观的命令行交互界面
+- 🧪 **完整测试**: 全面的测试覆盖，确保代码质量
 
-## 📦 Installation
+## 📦 安装
 
-### Global Installation (Recommended)
+### 全局安装（推荐）
 
 ```bash
 npm install -g anyig
 ```
 
-### Local Installation
+### 本地安装
 
 ```bash
 npm install anyig
-# or
+# 或者
 yarn add anyig
-# or
+# 或者
 pnpm add anyig
 ```
 
-## 🚀 Quick Start
+## 🚀 快速开始
 
-### Interactive Mode
+### 交互式模式
 
 ```bash
 anyig
 ```
 
-This will launch an interactive prompt where you can select from available templates:
+这将启动一个交互式提示，你可以从可用的模板中进行选择：
 
 ```
-? Select an ignore file to generate: (Use arrow keys)
+? 请选择要生成的忽略文件: (使用方向键选择)
 ❯ gitignore - Git版本控制忽略文件
   npmignore - NPM发布忽略文件
   eslintignore - ESLint忽略文件
@@ -57,26 +57,26 @@ This will launch an interactive prompt where you can select from available templ
   dockerignore - Docker构建忽略文件
 ```
 
-### Direct Template Generation
+### 直接生成模板
 
 ```bash
-# Generate a specific template
+# 生成特定模板
 anyig -t gitignore
 
-# Generate to a specific directory
+# 生成到指定目录
 anyig -t gitignore -o ./my-project
 
-# Generate multiple templates
+# 生成多个模板
 anyig -m
 ```
 
-### List Available Templates
+### 查看可用模板
 
 ```bash
-# List all templates
+# 列出所有模板
 anyig --list
 
-# List templates by category
+# 按分类列出模板
 anyig --categories
 ```
 
@@ -248,30 +248,32 @@ npm run format:check
 npm run typecheck
 ```
 
-## 🤝 Contributing
+## 🤝 贡献
 
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+欢迎贡献！请随时提交 Pull Request。对于重大更改，请先开启一个 issue 来讨论你想要更改的内容。
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+1. Fork 这个仓库
+2. 创建你的功能分支 (`git checkout -b feature/amazing-feature`)
+3. 提交你的更改 (`git commit -m 'Add some amazing feature'`)
+4. 推送到分支 (`git push origin feature/amazing-feature`)
+5. 开启一个 Pull Request
 
-## 📄 License
+## 📄 许可证
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
 
-## 🙏 Acknowledgments
+## 🙏 致谢
 
-- Inspired by the need for better ignore file management
-- Built with TypeScript and modern Node.js practices
-- Thanks to all contributors and users
+- 受到更好的忽略文件管理需求的启发
+- 使用 TypeScript 和现代 Node.js 实践构建
+- 感谢所有贡献者和用户
 
-## 📞 Support
+## 📞 支持
 
-- 🐛 [Report Issues](https://github.com/zhangyu-521/ig/issues)
+- 🐛 [报告问题](https://github.com/zhangyu-521/ig/issues)
+- 💬 [讨论](https://github.com/zhangyu-521/ig/discussions)
+- 📧 邮箱: zhangyu620@example.com
 
 ---
 
-Made with ❤️ by [zhangyu620](https://github.com/zhangyu-521)
+用 ❤️ 制作，作者 [zhangyu620](https://github.com/zhangyu-521)
