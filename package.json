@@ -1,6 +1,6 @@
 {
   "name": "anyig",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A powerful and extensible tool for generating ignore files for various development tools and environments",
   "repository": {
     "type": "git",

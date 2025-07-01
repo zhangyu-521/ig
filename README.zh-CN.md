@@ -271,8 +271,6 @@ npm run typecheck
 ## 📞 支持
 
 - 🐛 [报告问题](https://github.com/zhangyu-521/ig/issues)
-- 💬 [讨论](https://github.com/zhangyu-521/ig/discussions)
-- 📧 邮箱: zhangyu620@example.com
 
 ---
 
