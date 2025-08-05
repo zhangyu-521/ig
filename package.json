@@ -1,6 +1,6 @@
 {
   "name": "anyig",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "A powerful and extensible tool for generating ignore files for various development tools and environments",
   "repository": {
     "type": "git",
@@ -56,10 +56,10 @@
   "license": "MIT",
   "dependencies": {
     "commander": "^11.1.0",
-    "inquirer": "^9.2.12"
+    "inquirer": "^8.2.6"
   },
   "devDependencies": {
-    "@types/inquirer": "^9.0.8",
+    "@types/inquirer": "^8.2.10",
     "@types/jest": "^29.5.8",
     "@types/node": "^20.9.0",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
